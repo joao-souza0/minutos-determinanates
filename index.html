@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Minutos Determinantes — Remodelações no Porto</title>
+    <meta
+      name="description"
+      content="Minutos Determinantes: remodelações no Porto e Grande Porto. Simule o orçamento e peça uma visita técnica."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css?v=8" />
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+    <header class="nav">
+      <a class="brand" href="#inicio">
+        <span class="brand-mark">MD</span>
+        <span>
+          <strong>Minutos Determinantes</strong>
+          <small>Remodelações · Porto</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+        Menu
+      </button>
+      <nav id="menu" class="menu">
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Obra</a>
+        <a href="#zona">Zona</a>
+        <a href="#orcamento">Orçamentos</a>
+        <a href="#processo">Processo</a>
+        <a href="#conforto">Conforto</a>
+        <a href="#perguntas">FAQ</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn btn-small" href="#orcamento">Pedir orçamento</a>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1800&q=80"
+            alt=""
+          />
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Atelier de remodelação · Porto e Grande Porto</p>
+          <h1>A casa muda. Prazo e orçamento, definidos.</h1>
+          <p class="lead">
+            Projectamos e executamos obras em apartamentos e moradias no Porto,
+            com levantamento técnico, mapa de trabalhos e acompanhamento até à
+            entrega.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#orcamento">Simular orçamento</a>
+            <a class="btn btn-ghost" href="#contacto">Marcar visita técnica</a>
+          </div>
+          <dl class="stats">
+            <div>
+              <dt>120+</dt>
+              <dd>obras entregues</dd>
+            </div>
+            <div>
+              <dt>18 dias</dt>
+              <dd>prazo médio em interiores</dd>
+            </div>
+            <div>
+              <dt>0 €</dt>
+              <dd>visita e estimativa inicial</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section" id="servicos">
+        <div class="section-head">
+          <p class="eyebrow">Serviços</p>
+          <h2>Intervenção completa ou por divisão</h2>
+          <p>Âmbito definido por escrito, com materiais, prazos e responsabilidades claros.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <span class="card-index">01</span>
+            <h3>Cozinhas</h3>
+            <p>Layout, canalizações, eletrodomésticos, bancadas e iluminação de trabalho.</p>
+          </article>
+          <article class="card">
+            <span class="card-index">02</span>
+            <h3>Casas de banho</h3>
+            <p>Impermeabilização, sanitários, chuveiro ao nível do pavimento e arrumos.</p>
+          </article>
+          <article class="card">
+            <span class="card-index">03</span>
+            <h3>Interiores</h3>
+            <p>Pavimentos, pintura, tetos, portas, carpintaria e soluções de arrumação.</p>
+          </article>
+          <article class="card">
+            <span class="card-index">04</span>
+            <h3>Fachadas e exteriores</h3>
+            <p>Revestimentos, isolamento, varandas, terraços e acessos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="portfolio">
+        <div class="section-head">
+          <p class="eyebrow">Portfólio</p>
+          <h2>Obra recente no Porto</h2>
+        </div>
+        <div class="filtros" id="filtros-obra">
+          <button type="button" class="ativo" data-filtro="todas">Todas</button>
+          <button type="button" data-filtro="cozinha">Cozinhas</button>
+          <button type="button" data-filtro="banho">Casas de banho</button>
+          <button type="button" data-filtro="interior">Interiores</button>
+          <button type="button" data-filtro="exterior">Exteriores</button>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-main" data-tipo="cozinha">
+            <div class="ba">
+              <img
+                class="ba-depois"
+                src="https://images.unsplash.com/photo-1556912173-46c336c7fd55?auto=format&fit=crop&w=1200&q=80"
+                alt="Cozinha remodelada com ilha em madeira"
+              />
+              <div class="ba-antes">
+                <img
+                  src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80"
+                  alt="Cozinha antes da remodelação"
+                />
+              </div>
+              <input type="range" min="1" max="99" value="46" aria-label="Arrastar para comparar o antes e o depois" />
+            </div>
+            <figcaption>Cozinha · Cedofeita · arraste para ver o antes e o depois</figcaption>
+          </figure>
+          <figure data-tipo="banho">
+            <img
+              src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=900&q=80"
+              alt="Casa de banho com mármore e luz suave"
+            />
+            <figcaption>Casa de banho · Matosinhos</figcaption>
+          </figure>
+          <figure data-tipo="interior">
+            <img
+              src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=80"
+              alt="Sala de estar contemporânea"
+            />
+            <figcaption>Sala · Vila Nova de Gaia</figcaption>
+          </figure>
+          <figure data-tipo="cozinha">
+            <img
+              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=900&q=80"
+              alt="Cozinha branca com bancada de pedra"
+            />
+            <figcaption>Cozinha · Bonfim</figcaption>
+          </figure>
+          <figure data-tipo="exterior">
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"
+              alt="Moradia com fachada e terraço remodelados"
+            />
+            <figcaption>Fachada · Gondomar</figcaption>
+          </figure>
+          <figure data-tipo="banho">
+            <img
+              src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=900&q=80"
+              alt="Casa de banho clara com duche"
+            />
+            <figcaption>Casa de banho · Foz</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="zona">
+        <div class="section-head">
+          <p class="eyebrow">Área de obra</p>
+          <h2>Veja se a sua zona entra no mapa</h2>
+          <p>
+            Porto, Matosinhos, Gaia, Gondomar, Maia e Valongo têm deslocação incluída.
+            Nos concelhos limítrofes a visita continua gratuita e a obra soma 180 €.
+          </p>
+        </div>
+        <form class="zona-form" id="form-zona">
+          <label>
+            Concelho ou freguesia
+            <input name="lugar" type="text" list="zonas-lista" placeholder="Foz, Matosinhos, Espinho…" required />
+          </label>
+          <button class="btn" type="submit">Verificar zona</button>
+        </form>
+        <datalist id="zonas-lista">
+          <option value="Porto"></option>
+          <option value="Foz do Douro"></option>
+          <option value="Cedofeita"></option>
+          <option value="Matosinhos"></option>
+          <option value="Vila Nova de Gaia"></option>
+          <option value="Gondomar"></option>
+          <option value="Maia"></option>
+          <option value="Valongo"></option>
+          <option value="Espinho"></option>
+          <option value="Vila do Conde"></option>
+          <option value="Póvoa de Varzim"></option>
+          <option value="Santo Tirso"></option>
+        </datalist>
+        <div class="zona-resultado" id="zona-resultado" hidden></div>
+      </section>
+
+      <section class="section" id="pacotes">
+        <div class="section-head">
+          <p class="eyebrow">Referências de investimento</p>
+          <h2>Três níveis de acabamento. O orçamento é à medida.</h2>
+          <p>
+            Valores indicativos para o Porto e concelhos limítrofes, com mão de
+            obra e materiais de linha. O simulador ajusta área, qualidade e extras.
+          </p>
+        </div>
+        <div class="packages" id="lista-pacotes"></div>
+      </section>
+
+      <section class="section section-dark" id="orcamento">
+        <div class="section-head">
+          <p class="eyebrow">Simulador</p>
+          <h2>Estimativa de orçamento em minutos</h2>
+          <p>
+            Indique o tipo de obra e a área. Junte várias divisões, veja o plano
+            de pagamentos e envie o pedido para um orçamento formal após visita técnica.
+          </p>
+        </div>
+
+        <div class="quote-layout">
+          <form class="quote-form" id="form-orcamento">
+            <label>
+              Tipo de obra
+              <select name="tipo" required></select>
+            </label>
+            <div class="dims">
+              <label>
+                Comprimento (m)
+                <input name="comprimento" type="number" min="1" max="40" step="0.1" inputmode="decimal" placeholder="4,5" />
+              </label>
+              <label>
+                Largura (m)
+                <input name="largura" type="number" min="1" max="40" step="0.1" inputmode="decimal" placeholder="4" />
+              </label>
+            </div>
+            <label>
+              Área útil (m²)
+              <input name="area" type="number" min="4" max="400" step="1" value="18" required />
+            </label>
+            <p class="fine dims-note">Com comprimento e largura, a área calcula-se sozinha. Pode corrigi-la à mão.</p>
+            <fieldset>
+              <legend>Nível de acabamento</legend>
+              <label class="choice">
+                <input type="radio" name="qualidade" value="essencial" />
+                Essencial
+              </label>
+              <label class="choice">
+                <input type="radio" name="qualidade" value="conforto" checked />
+                Conforto
+              </label>
+              <label class="choice">
+                <input type="radio" name="qualidade" value="assinatura" />
+                Assinatura
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Incluir no orçamento</legend>
+              <label class="choice"><input type="checkbox" name="extras" value="pintura" checked /> Pintura</label>
+              <label class="choice"><input type="checkbox" name="extras" value="pavimento" /> Pavimento novo</label>
+              <label class="choice"><input type="checkbox" name="extras" value="eletrico" /> Quadro e pontos elétricos</label>
+              <label class="choice"><input type="checkbox" name="extras" value="hidraulico" /> Hidráulica</label>
+              <label class="choice"><input type="checkbox" name="extras" value="mobiliario" /> Mobiliário à medida</label>
+            </fieldset>
+            <fieldset>
+              <legend>Conforto com a casa habitada</legend>
+              <label class="choice"><input type="checkbox" name="conforto" value="protecao" /> Proteção de pó e móveis</label>
+              <label class="choice"><input type="checkbox" name="conforto" value="sanitario" /> Sanitário provisório</label>
+              <label class="choice"><input type="checkbox" name="conforto" value="horario" /> Horário reduzido, 9h–17h</label>
+            </fieldset>
+            <label class="choice">
+              <input type="checkbox" name="deslocacao" />
+              Deslocação fora do Grande Porto (180 €)
+            </label>
+            <label class="choice">
+              <input type="checkbox" name="comIva" />
+              Mostrar valores com IVA (23%)
+            </label>
+            <label>
+              Designação do orçamento
+              <input name="titulo" type="text" maxlength="80" placeholder="Ex.: Casa de banho do rés-do-chão" />
+            </label>
+            <div class="form-actions">
+              <button class="btn" type="submit">Atualizar e guardar</button>
+              <button class="btn btn-ghost" type="button" id="btn-imprimir">Imprimir / PDF</button>
+              <button class="btn btn-ghost" type="button" id="btn-repor">Repor</button>
+            </div>
+          </form>
+
+          <aside class="quote-result" aria-live="polite">
+            <p class="eyebrow">Estimativa</p>
+            <p class="quote-total" id="quote-total">—</p>
+            <p class="quote-m2" id="quote-m2"></p>
+            <p class="quote-iva" id="quote-iva"></p>
+            <p class="quote-range" id="quote-range"></p>
+            <p class="quote-prazo" id="quote-prazo"></p>
+            <p class="quote-label">Fases da obra</p>
+            <ol class="quote-fases" id="quote-fases"></ol>
+            <p class="quote-label">As três linhas, nesta área</p>
+            <div class="quote-compare" id="quote-compare"></div>
+            <ul class="quote-lines" id="quote-lines"></ul>
+            <p class="quote-label">Como se paga</p>
+            <p class="quote-marcos" id="quote-marcos"></p>
+            <div class="meses-linha">
+              <label for="meses-saldo">Restante após o sinal</label>
+              <select id="meses-saldo">
+                <option value="0">pelos marcos da obra</option>
+                <option value="3">em 3 meses</option>
+                <option value="6">em 6 meses</option>
+                <option value="10">em 10 meses</option>
+              </select>
+            </div>
+            <p class="fine" id="quote-prestacao"></p>
+            <p class="fine" id="quote-nota">
+              Estimativa de referência. A visita técnica no Porto confirma medidas, estado da casa e prazos.
+            </p>
+            <div class="quote-actions">
+              <button class="btn btn-full" type="button" id="btn-enviar">
+                Enviar este orçamento
+              </button>
+              <button class="btn btn-full btn-on-blue" type="button" id="btn-whatsapp">
+                Partilhar no WhatsApp
+              </button>
+              <button class="btn btn-full btn-on-blue" type="button" id="btn-copiar">
+                Copiar resumo
+              </button>
+              <button class="btn btn-full btn-on-blue" type="button" id="btn-ligacao">
+                Copiar ligação desta estimativa
+              </button>
+            </div>
+            <p class="fine" id="quote-copia" role="status"></p>
+          </aside>
+        </div>
+
+        <div class="saved">
+          <div class="section-head tight">
+            <h3>Orçamentos guardados neste dispositivo</h3>
+            <button class="linkish" type="button" id="btn-limpar">Limpar lista</button>
+          </div>
+          <div class="saved-list" id="saved-list"></div>
+          <div class="comparar" id="comparar" hidden></div>
+        </div>
+
+        <div class="projeto">
+          <div class="section-head tight">
+            <h3>Obra com várias divisões</h3>
+            <button class="linkish" type="button" id="btn-limpar-projeto">Limpar obra</button>
+          </div>
+          <p class="fine">
+            Junte a estimativa atual a outras divisões. Com duas ou mais, a coordenação reduz 4% e o prazo sobrepõe equipas.
+          </p>
+          <button class="btn" type="button" id="btn-juntar">Juntar esta divisão à obra</button>
+          <div class="saved-list" id="projeto-lista"></div>
+          <div class="projeto-total" id="projeto-total" hidden></div>
+        </div>
+      </section>
+
+      <section class="section" id="testemunhos">
+        <div class="section-head">
+          <p class="eyebrow">Clientes</p>
+          <h2>Obras com calendário cumprido</h2>
+        </div>
+        <div class="cards cards-three">
+          <article class="card">
+            <p>“Do orçamento à entrega, soubemos sempre em que fase estávamos. A casa de banho ficou exatamente como combinámos.”</p>
+            <p class="fine">Marta Silva · Foz do Douro</p>
+          </article>
+          <article class="card">
+            <p>“Simulámos o valor no site, pedimos a visita e o orçamento formal veio alinhado. Sem extras a meio da obra.”</p>
+            <p class="fine">Rui e Inês · Matosinhos</p>
+          </article>
+          <article class="card">
+            <p>“Cozinha em 16 dias, limpeza no fim e garantia por escrito. Recomendo pela clareza, não só pelo resultado.”</p>
+            <p class="fine">Paulo Mendes · Gaia</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="processo">
+        <div class="section-head">
+          <p class="eyebrow">Método</p>
+          <h2>Quatro etapas, sem alterações por surpresa</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <strong>Visita e levantamento</strong>
+            Medimos, fotografamos e alinhamos o âmbito da remodelação.
+          </li>
+          <li>
+            <strong>Orçamento formal</strong>
+            Mapa de trabalhos, materiais e calendário, por escrito.
+          </li>
+          <li>
+            <strong>Obra acompanhada</strong>
+            Um responsável de obra e ponto de situação semanal.
+          </li>
+          <li>
+            <strong>Entrega e garantia</strong>
+            Checklist final, limpeza e garantia de 5 anos na execução.
+          </li>
+        </ol>
+      </section>
+
+      <section class="section section-alt" id="conforto">
+        <div class="section-head">
+          <p class="eyebrow">Conforto em obra</p>
+          <h2>A casa pode continuar a ser casa</h2>
+          <p>
+            Se vai morar durante a remodelação, estes cuidados entram na estimativa
+            e no calendário. Escolhe-os no simulador ou a partir daqui.
+          </p>
+        </div>
+        <div class="cards cards-three" id="conforto-opcoes">
+          <article class="card">
+            <span class="card-index">01</span>
+            <h3>Pó e móveis</h3>
+            <p>Barreiras nas passagens, proteção de pavimento e de peças que ficam no sítio.</p>
+            <button class="btn btn-small" type="button" data-conforto="protecao">Incluir na estimativa</button>
+          </article>
+          <article class="card">
+            <span class="card-index">02</span>
+            <h3>Sanitário provisório</h3>
+            <p>Quando a casa de banho fica fechada, há um ponto de água e sanita utilizável.</p>
+            <button class="btn btn-small" type="button" data-conforto="sanitario">Incluir na estimativa</button>
+          </article>
+          <article class="card">
+            <span class="card-index">03</span>
+            <h3>Horário reduzido</h3>
+            <p>Obra em dias úteis, das 9h às 17h, para baixar o ruído no fim do dia. O prazo alonga-se um pouco.</p>
+            <button class="btn btn-small" type="button" data-conforto="horario">Incluir na estimativa</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="perguntas">
+        <div class="section-head">
+          <p class="eyebrow">Perguntas frequentes</p>
+          <h2>Antes de pedir o orçamento</h2>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>O simulador substitui o orçamento formal?</summary>
+            <p>Não. Dá uma estimativa imediata para planear o investimento. O valor definitivo sai da visita técnica, com medidas e estado real da casa.</p>
+          </details>
+          <details>
+            <summary>Qual é a área de intervenção?</summary>
+            <p>Trabalhamos no Porto e Grande Porto (Matosinhos, Gaia, Gondomar, Maia, Valongo e concelhos vizinhos). Outras zonas são avaliadas caso a caso.</p>
+          </details>
+          <details>
+            <summary>O que está incluído no preço?</summary>
+            <p>Mão de obra, materiais da linha escolhida, gestão de obra e limpeza final. Licenças, mobiliário extra e alterações a meio do processo são orçamentados à parte.</p>
+          </details>
+          <details>
+            <summary>Como se paga a obra?</summary>
+            <p>Sinal na adjudicação, tranches ligadas a marcos (demolição, instalações, acabamentos) e saldo na entrega, com checklist assinado.</p>
+          </details>
+          <details>
+            <summary>Posso continuar a morar em casa?</summary>
+            <p>Sim. Organizamos a obra por divisões e, se quiser, incluímos proteção de pó, sanitário provisório e horário das 9h às 17h. Estas opções aparecem no simulador e alongam o prazo só quando o horário é reduzido.</p>
+          </details>
+          <details>
+            <summary>O valor do simulador inclui IVA?</summary>
+            <p>Por omissão, a estimativa é sem IVA. Pode ligar a opção «Mostrar valores com IVA (23%)» para ver o total, o intervalo e cada rubrica com o imposto à parte.</p>
+          </details>
+          <details>
+            <summary>Posso orçamentar várias divisões de uma vez?</summary>
+            <p>Sim. Calcule uma divisão e use «Juntar esta divisão à obra». O total junta as rubricas, desconta 4% de coordenação a partir da segunda divisão e o prazo não soma os dias todos, porque as equipas trabalham em paralelo.</p>
+          </details>
+          <details>
+            <summary>Como funcionam as prestações?</summary>
+            <p>O pagamento de obra segue marcos: 30% de sinal, 30% nas instalações, 25% nos acabamentos e o saldo na entrega. No simulador também pode ver o restante, depois do sinal, repartido em 3, 6 ou 10 meses, sem juros. É uma simulação: o calendário de pagamento fecha-se no orçamento formal.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="contacto">
+        <div class="section-head">
+          <p class="eyebrow">Contacto</p>
+          <h2>Marque visita técnica no Porto</h2>
+        </div>
+        <div class="contact-grid">
+          <form class="contact-form" id="form-contacto">
+            <label>
+              Nome
+              <input name="nome" type="text" required autocomplete="name" />
+            </label>
+            <label>
+              Telefone
+              <input name="telefone" type="tel" required autocomplete="tel" />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" required autocomplete="email" />
+            </label>
+            <label>
+              Zona / freguesia
+              <input name="zona" type="text" placeholder="Porto, Foz, Matosinhos, Gaia…" />
+            </label>
+            <p class="fine">Próximos dias úteis para visita</p>
+            <div class="agenda" id="agenda-visita"></div>
+            <div class="dims">
+              <label>
+                Dia preferido da visita
+                <input name="dataVisita" type="date" />
+              </label>
+              <label>
+                Horário
+                <select name="horario">
+                  <option value="">Sem preferência</option>
+                  <option value="manha">Manhã, 9h–12h</option>
+                  <option value="tarde">Tarde, 14h–17h</option>
+                  <option value="fim">Fim de tarde, 17h–19h</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              Como prefere que falemos consigo
+              <select name="canal">
+                <option value="telefone">Telefone</option>
+                <option value="whatsapp">WhatsApp</option>
+                <option value="email">Email</option>
+              </select>
+            </label>
+            <label class="choice">
+              <input type="checkbox" name="habitada" />
+              A casa vai estar habitada durante a obra
+            </label>
+            <label>
+              Mensagem
+              <textarea name="mensagem" rows="4" placeholder="Descreva a remodelação pretendida."></textarea>
+            </label>
+            <label class="choice">
+              <input type="checkbox" name="anexar" id="anexar-orcamento" checked />
+              Incluir o último orçamento simulado
+            </label>
+            <button class="btn" type="submit">Enviar pedido</button>
+            <p class="form-status" id="contacto-status" role="status"></p>
+          </form>
+          <aside class="contact-card">
+            <p class="eyebrow">Escritório</p>
+            <p><strong>Minutos Determinantes, Lda.</strong></p>
+            <p>Rua de Cedofeita 248<br />4050-174 Porto</p>
+            <p><a href="tel:+351220000000">+351 220 000 000</a></p>
+            <p><a href="mailto:porto@minutosdeterminantes.pt">porto@minutosdeterminantes.pt</a></p>
+            <p>
+              <a class="btn btn-small" href="https://wa.me/351220000000" target="_blank" rel="noopener">Falar no WhatsApp</a>
+            </p>
+            <p>Segunda a sexta, 9h–18h</p>
+            <p class="fine">Contactos ilustrativos para esta página de demonstração.</p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="ano"></span> Minutos Determinantes · Porto. Remodelações com calendário e orçamento definidos.</p>
+    </footer>
+
+    <article class="contrato" id="contrato" hidden>
+      <header class="contrato-topo">
+        <div>
+          <p class="contrato-marca">Minutos Determinantes, Lda.</p>
+          <p>Rua de Cedofeita 248 · 4050-174 Porto</p>
+        </div>
+        <div class="contrato-meta">
+          <p>Minuta de contrato de empreitada</p>
+          <p>Ref. <strong id="ct-ref"></strong></p>
+          <p>Data <strong id="ct-data"></strong></p>
+        </div>
+      </header>
+
+      <h1 id="ct-titulo"></h1>
+
+      <h2>1. Partes</h2>
+      <p>
+        <strong>Empreiteiro:</strong> Minutos Determinantes, Lda., com escritório na Rua de Cedofeita 248, 4050-174 Porto.
+      </p>
+      <p>
+        <strong>Dono da obra:</strong> <span id="ct-cliente"></span>
+      </p>
+      <p id="ct-contacto"></p>
+
+      <h2>2. Objeto da obra</h2>
+      <p id="ct-objeto"></p>
+      <table class="contrato-tabela">
+        <thead>
+          <tr>
+            <th>Rubrica</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+        <tbody id="ct-linhas"></tbody>
+      </table>
+
+      <h2>3. Preço</h2>
+      <p id="ct-preco"></p>
+      <p>
+        O preço é sem IVA. Trabalhos não descritos neste mapa, licenças e alterações pedidas depois da adjudicação são orçamentados à parte e só avançam com acordo escrito.
+      </p>
+
+      <h2>4. Prazo e dias de obra</h2>
+      <p id="ct-prazo"></p>
+      <table class="contrato-tabela">
+        <thead>
+          <tr>
+            <th>Fase</th>
+            <th>Dias úteis</th>
+          </tr>
+        </thead>
+        <tbody id="ct-fases"></tbody>
+      </table>
+      <p>
+        A contagem começa no dia útil seguinte à receção do sinal e da autorização de início. Sábados, domingos e feriados não entram no prazo, salvo acordo escrito. O empreiteiro comunica o ponto de situação no fim de cada semana de obra.
+      </p>
+
+      <h2>5. Pagamentos</h2>
+      <table class="contrato-tabela">
+        <thead>
+          <tr>
+            <th>Marco</th>
+            <th>Momento</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+        <tbody id="ct-pagamentos"></tbody>
+      </table>
+
+      <h2>6. Incluído e garantia</h2>
+      <p>
+        Estão incluídos a mão de obra, os materiais da linha de acabamento indicada, a gestão de obra e a limpeza final. A execução tem garantia de 5 anos, conferida na entrega com checklist assinado pelas duas partes.
+      </p>
+
+      <div class="contrato-assinaturas">
+        <div>
+          <p>O empreiteiro</p>
+          <span>Minutos Determinantes, Lda.</span>
+        </div>
+        <div>
+          <p>O dono da obra</p>
+          <span id="ct-assinatura"></span>
+        </div>
+      </div>
+      <p class="contrato-nota">
+        Minuta preenchida com a estimativa do simulador. Medidas, estado da casa e o calendário definitivo confirmam-se na visita técnica.
+      </p>
+    </article>
+
+    <div class="assistente">
+      <section class="assistente-painel" id="assistente-painel" hidden aria-labelledby="assistente-titulo">
+        <header class="assistente-cabeca">
+          <span class="brand-mark" aria-hidden="true">MD</span>
+          <div>
+            <h2 id="assistente-titulo">Atendimento de obra</h2>
+            <p>Prazo, preço e execução, com o critério da casa</p>
+          </div>
+          <button class="assistente-fechar" id="assistente-fechar" type="button" aria-label="Fechar atendimento">×</button>
+        </header>
+        <div class="assistente-msgs" id="assistente-msgs" aria-live="polite"></div>
+        <div class="assistente-sugestoes" id="assistente-sugestoes"></div>
+        <form class="assistente-form" id="assistente-form">
+          <input id="assistente-input" name="pergunta" type="text" maxlength="400" placeholder="Escreva a sua dúvida sobre a obra" autocomplete="off" required />
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+      </section>
+      <button class="assistente-abrir" id="assistente-abrir" type="button" aria-expanded="false" aria-controls="assistente-painel">
+        Dúvidas da obra
+      </button>
+    </div>
+
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox-fechar" id="lightbox-fechar" type="button">Fechar</button>
+      <button class="lightbox-nav lightbox-prev" id="lightbox-prev" type="button" aria-label="Imagem anterior">‹</button>
+      <figure>
+        <img id="lightbox-img" alt="" />
+        <figcaption id="lightbox-cap"></figcaption>
+      </figure>
+      <button class="lightbox-nav lightbox-next" id="lightbox-next" type="button" aria-label="Imagem seguinte">›</button>
+    </div>
+
+    <script src="app.js?v=4"></script>
+  </body>
+</html>
